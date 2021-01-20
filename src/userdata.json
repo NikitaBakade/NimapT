@@ -1,0 +1,15 @@
+{
+  "userdata": [
+    {
+      "firstname": "Nikita",
+      "lastname": "Bakade",
+      "email": "N@b.com",
+      "mobile": "125478935",
+      "age": "21",
+      "state": "1",
+      "country": "1",
+      "address": "Andheri",
+      "id": 1
+    }
+  ]
+}

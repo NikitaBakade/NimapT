@@ -1,0 +1,48 @@
+<p class="heading">User Profile Template</p>
+
+<div class="container">
+    <div class="row">
+        <div class="col6">
+            <p> Demo App</p>
+        </div>
+        <div class="col6">
+            <ul>
+                <li class="l1">HOME</li>
+                <li class="l2">ABOUT US</li>
+                <li class="l2">JOB</li>
+                <li class="l2">CLIENTS</li>
+                <li class="l2">EMPLOYERS</li>
+                <li class="l2">CONTACT US</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<h5 class="profileheading">Profile</h5>
+
+<div class="profile">
+    <div class="row" *ngFor = "let ans of allUsers">
+        <div class="col6">
+            <img src="{{ans.img}}" class="profileimg" >
+        </div>
+        <div class="col6">
+            <p class="para">I'm {{ans.firstname}} and Im above {{ans.age}} years and<br> you can send your email to<br> {{ans.email}}. I live in the state of<br> {{ans.state}}. I like to play hockey, football and reading<br> books. And please send me Newsletter. please <br>reach out me on my phone number.</p>
+            <button class="button" (click)="closetBtn(obj)">I Agree</button>
+        </div>
+        <div class="editbtns">
+            <a href="/editPhoto" class="button1">Edit Photo</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/editprofile/{{ans.id}}" class="button2">Edit Profile</a>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="blackbg">
+	<div class="col12">
+		<p>Subscribe to our Job Seeker Mailing List</p>
+		<input type="text" class="txt" placeholder="Enter Your Email Address">
+	</div>
+</div>

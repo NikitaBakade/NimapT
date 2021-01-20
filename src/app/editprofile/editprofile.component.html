@@ -1,0 +1,59 @@
+<form action="#">
+  <div class="secondContainer">
+    <div class="col4">
+      <img [src]="Imageurl" class="UpdateImageUrl" style="height:150px;" width="150px">
+      <input type="file" class="fileUpdateBtn" value="" (change)="selectFile($event)">
+    </div>
+
+    <div class="col8">
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="FirstName" id="exampleInputEmail1" aria-describedby="emailHelp" #x1 [value]="ProfileUrlRec.firstname">
+      </div>
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="LastName" id="exampleInputEmail1" aria-describedby="emailHelp" #x2 [value]="ProfileUrlRec.lastname">
+      </div>
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Email" id="exampleInputEmail1" aria-describedby="emailHelp" #x3 [value]="ProfileUrlRec.email">
+      </div>
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="(541) 754-3010" id="exampleInputEmail1" aria-describedby="emailHelp" #x4 [value]="ProfileUrlRec.mobile">
+      </div>
+        <p class="abcd">Age :</p>
+        <input type="range" class="custom-range" value="10" min="20" max="60" id="customRange2" #x5 [value]="ProfileUrlRec.age">
+        <span class="fage">20</span><span class="sage">60</span>
+                   
+        <select class="form-select" aria-label="Default select example" class="form-control" #x6 [value]="ProfileUrlRec.state">
+          <option selected>State</option>
+          <option value="1">Maharastra</option>
+          <option value="2">Rajstan</option>
+          <option value="3">Gujrat</option>
+        </select><br>
+
+        <select class="form-select" aria-label="Default select example" class="form-control" #x7 [value]="ProfileUrlRec.country">
+          <option selected>Country</option>
+          <option value="1">India</option>
+          <option value="2">USA</option>
+          <option value="3">UK</option>
+        </select><br>
+
+        <select id="inputCountry" class="form-control" #x8 [value]="ProfileUrlRec.address">
+          <optgroup label="Home">
+            <option value="Mumbai">Address1</option>
+            <option value="Andheri">Address2</option>
+          </optgroup>
+          <optgroup label="Office">
+            <option value="Mumbai">Address1</option>
+            <option value="CST">Address2</option>
+          </optgroup>
+        </select><br>
+
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck1">
+          <label class="custom-control-label" for="customCheck1"><p class="abcd">Subscribe to Newsletter</p></label>
+        </div>
+        <div class="updateBtn">
+          <button type="submit" class="btn btn-primary" (click)="updateProfileRec(x1,x2,x3,x4,x5,x6,x7,x8)">Update</button>
+        </div>
+    </div>
+  </div>
+</form>

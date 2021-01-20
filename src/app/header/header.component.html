@@ -1,0 +1,123 @@
+<div class="bg">
+  <div class="home">
+    <div class="col12">
+      <div class="card bg-dark text-white">
+        <img src="/assets/images/slide_01.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <ul class="header">
+            <li><a href=""> HOME </a></li>
+            <li><a href=""> ABOUT US </a></li>
+            <li><a href=""> JOBS </a></li>
+            <li><a href=""> CLIENTS </a></li>
+            <li><a href=""> EMPLOYERS </a></li>
+            <li><a href=""> CONTACT US </a></li>
+          </ul>
+          <h2 class="card-text"><i>I'm looking for..</i></h2>
+          <div class="textbox">
+            <input type="text" class="txt" placeholder="Enter a Job Description"><button type="button" class="btn btn-primary">Search</button>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Full time &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </label>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label1" for="defaultCheck1">
+              Part Time / Casual / Freelance
+            </label>
+            <input type="text" class="txt2" placeholder="Select your location">
+          </div>
+          <div class="regbtn">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Register</button>
+              <form action="#" [formGroup]="profileForm" (ngSubmit)="addProfile(profileForm)" #addUser>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><span>Register</span></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-md-4 ms-auto">
+                          
+                            <img [src]="Imageurl" class="xyz" style="height:150px;" width="150px">
+								            <input type="file" class="filebtn" value="" (change)="selectFile($event)" formControlName="img">
+
+                          </div>
+                          <div class="col-md-8 ms-auto">
+                            <div class="row">
+                              <div class="col">
+                                <input type="text" class="form-control" placeholder="FirstName" formControlName="firstname">
+                                  <div *ngIf="profileForm.controls['firstname'].touched && !profileForm.controls['firstname'].valid">
+                                    <span *ngIf="profileForm.controls['firstname'].hasError('required')">
+                                      <span style="color: red;">firstname required</span>
+                                    </span>
+                                    <span *ngIf="profileForm.controls['firstname'].hasError('pattern')">
+                                      <span style="color: red;">Min 2 & Max 20 capital letters allowed</span>
+                                    </span>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                <input type="text" class="form-control" placeholder="LastName" formControlName="lastname">
+                              </div>
+                            </div><br>
+                              <input type="text" class="form-control" placeholder="Email" formControlName="email"><br>
+                              <input type="text" class="form-control" placeholder="(541) 754-3010" formControlName="mobile"><br>
+                              <p class="abcd">Age :</p>
+                              <input type="range" class="custom-range" value="10" min="20" max="60" id="customRange2" formControlName="age">
+                              <span class="fage">20</span><span class="sage">60</span>
+
+                              <select id="inputState" class="form-control">
+                                <option>State..</option>
+                                <option>Maharastra</option>
+                                <option>Rajstan</option>
+                                <option>Gujrat</option>
+                              </select><br>
+                              
+                              <select id="inputCountry" class="form-control">
+                                <option>Country..</option>
+                                <option>India</option>
+                                <option>USA</option>
+                                <option>UK</option>
+                              </select><br>
+
+                              <select id="inputCountry" class="form-control">
+                                <option>Address</option>
+                                <optgroup label="Home">
+                                  <option value="Mumbai">Address1</option>
+                                  <option value="Andheri">Address2</option>
+                                </optgroup>
+                                <optgroup label="Office">
+                                  <option value="Mumbai">Address1</option>
+                                  <option value="CST">Address2</option>
+                                </optgroup>
+                              </select><br>
+                              
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1"><p class="abcd">Subscribe to Newsletter</p></label>
+                              </div>
+
+                              <div class="row">
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="submit" class="btn btn-primary" [disabled]="!profileForm.valid">Save</button>
+                                  {{profileForm.valid}}
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

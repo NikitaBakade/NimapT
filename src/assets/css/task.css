@@ -1,0 +1,62 @@
+.bg{background-color: lightgrey;z-index: 1;}
+.home .col12 img{height: 700px;opacity: 0.7;position: absolute;}
+.home .col12 .header{list-style: none;cursor: pointer;}
+.home .col12 .header li{float: right;padding-top: 50px;padding-right: 50px;font-size: 18px;}
+.home .col12 .header li a{cursor: pointer;color: white;font-weight: bold;}
+.home .col12 .header li a:hover{text-decoration: none;border-top:3px solid blue;padding-top: 20px;}
+.home .col12 h2{color: white;font-size: 60px;padding-top: 300px;padding-left: 300px;}
+.home .col12 .textbox{padding-left: 300px;padding-top: 20px;}
+.home .col12 .txt{padding: 10px 200px;}
+.home .col12 .btn{margin-left: 30px;padding: 10px 20px;}
+.home .col12 .form-check{padding-left: 320px;padding-top: 30px;}
+.home .col12 .txt2{margin-left: 12px;padding: 5px 20px;}
+.home .col12 .regbtn{padding-left: 700px;padding-top: 50px;}
+.btn1{margin-top: 160px;}
+.form-control{padding-right: 10px;}
+.filebtn{margin-top: 150px;}
+
+.flname .row .col, .flname .umail, .flname .no{margin-top: 20px;}
+.range .row p{margin-top: 10px;}
+.popup .form-group .form-control{margin-top: 10px;}
+.form-group{margin-top: 10px;}
+.imgtxt{padding-top: 150px; color: #14c0ff;}
+.fage{color: darkgray;}
+.sage{color: darkgray; float:right}
+
+
+.middle_section .col12{padding-top: 800px;background: lightgrey;text-align: center;}
+.middle_section .col12 p{font-size: 30px;}
+.middle_section .col12 h1{font-size: 45px;padding-bottom: 25px;}
+.middle_section .col12 span p{border-top: 5px solid #14c0ff;font-size: 10px;padding-bottom: 25px;margin-left: 700px;margin-right: 700px;}
+.middle_section .col12 .para{font-size: 20px;padding-bottom: 50px;}
+.middle_section .col12 .btn{padding-left: 50px;padding-right: 50px;font-weight: bold;margin-bottom: 60px;text-transform: uppercase;}
+
+
+.footer .bi{color: #14c0ff;}
+.footer .i{margin-top: 50px;margin-left: 100px;}
+.footer .txt{height: 20px; width: 200px;}
+.footer .row p{padding-top: 20px;padding-left: 110px;color: grey;}
+.modal-title span{color : white;}
+.abcd{color: gray;}
+.modal-header{background-color:rgb(10, 115, 236);}
+.modal-header .close{border-radius: 20px;}
+.heading{color: red;font-size: 40px;padding-left: 185px; padding-top: 50px;}
+.container .row{background-color: rgb(8, 159, 230);height: 100px;}
+.container .row .col6 p{color: black;font-size: 20px;padding-top: 60px;padding-left: 150px;}
+.container .row .col6 ul{list-style: none;}
+.container .row .col6 ul li{float: left;color: white;padding-left: 20px;font-size: 15px;padding-top: 50px;}
+
+
+.profileheading{color:  rgb(8, 159, 230);padding-left: 450px;padding-top: 100px;}
+.profile .profileimg{float:right;margin-right: 100px;height: 300px;width: 250px;}
+.profile{padding-bottom: 300px;}
+.profile .button{background-color: green;color: white;padding: 5px 15px;}
+.editbtns{margin-left: 28%;margin-top: 20px;padding-bottom: 50px;}
+.editbtns .button1, .button2{background-color: rgb(231, 191, 10);padding: 5px;color: rgb(53, 51, 51);border-bottom: 2px solid brown;}
+.blackbg .col12{background: black;color: white;text-align: center;padding-top: 150px;font-size: 20px;padding-bottom: 120px;}
+.blackbg .col12 .txt{background: black;border-color: #14c0ff;color: white;border-radius: 1px;font-size: 15px;padding: 5px 70px;}
+
+.UpdateImageUrl{margin-top: 150px;}
+.inputText{margin-top: 100px;}
+.col8{padding-top: 100px;}
+.col8 .fileUpdateBtn{margin-top: 100px;}
